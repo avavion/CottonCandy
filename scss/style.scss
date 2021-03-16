@@ -3,8 +3,8 @@
   --section-padding: 90px;
   --container-width: 1530px;
   --container-offset: 15px;
-
   --color-pink: #ffa6cc;
+  --color-grey: #fbfbfb;
 }
 
 @import "mixins.scss";
@@ -19,9 +19,23 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: var(--color-grey);
+
+  &-thumb {
+    background-color: var(--color-pink);
+  }
+}
+
 body {
   font-size: 16px;
   font-family: var(--font), sans-serif;
+  background-color: var(--color-grey);
 }
 
 .container {
@@ -31,10 +45,9 @@ body {
 }
 
 .section {
-  padding: var(--section-padding) 0;
   &-header {
     @include flex;
-    margin-bottom: 90px;
+    margin: var(--section-padding) 0;
     &__title {
       font-family: var(--font);
       font-size: 64px;

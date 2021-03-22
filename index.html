@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" prefix="og: https://ogp.me/ns#">
+<html prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,7 +10,7 @@
       name="keywords"
       content="cotton candy, сладкая вата, сладкая вата на выезд, выездная сладкая вата, сахарная вата, на выезд, выездная, мероприятие, сладкая вата на мероприятие"
     />
-    <meta name="Classification" content="Business" />
+    <meta name="classification" content="Business" />
     <meta name="owner" content="Alan Bogov, avavionmvm@gmail.com" />
     <meta name="designer" content="Alan Bogov, avavionmvm@gmail.com" />
     <meta name="copyright" content="CottonCandy" />
@@ -18,18 +18,19 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Cache-Control" content="no-cache" />
 
-    <meta name="og:title" content="Как в детстве!" />
-    <meta name="og:email" content="avavionmvm@gmail.com" />
-
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
+    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Как в детстве!</title>
+    <!-- Open Graph -->
+    <meta name="og:title" content="Как в детстве!" />
+    <meta name="og:email" content="avavionmvm@gmail.com" />
   </head>
   <body id="app">
     <header class="header" id="header">
@@ -67,6 +68,9 @@
     <footer class="footer" id="footer">
       <div class="container"></div>
     </footer>
+
+    <div id="loader" class="loader"></div>
+
     <script src="scripts/app.js" defer="defer"></script>
   </body>
 </html>

@@ -90,3 +90,17 @@ ol {
     }
   }
 }
+
+.row {
+  @include flex;
+}
+
+.col {
+  @include flex(column);
+  @include margin(10, 10, 10, 10);
+  @for $index from 1 to 13 {
+    &-#{$index} {
+      flex: $index;
+    }
+  }
+}

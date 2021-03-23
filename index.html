@@ -34,7 +34,80 @@
   </head>
   <body id="app">
     <header class="header" id="header">
-      <div class="container"></div>
+      <!-- Контент -->
+      <div class="header-content">
+        <div class="container">
+          <nav class="nav">
+            <!-- Список ссылок (в админке их будет больше) -->
+            <ul class="list nav-list">
+              <li class="list-item">
+                <a href="/" class="list-item__link js-openMenu" id="openMenu"
+                  >Меню</a
+                >
+              </li>
+            </ul>
+
+            <!-- Логотип -->
+            <div class="nav-logo">
+              <a href="/" class="nav-logo__link">
+                <h1 class="nav-logo__title">
+                  КАК В <span class="accent">ДЕТСТВЕ!</span>
+                </h1>
+                <img
+                  src="media/logo.svg"
+                  alt="Логотип"
+                  class="nav-logo__image"
+                />
+              </a>
+            </div>
+          </nav>
+          <div class="hero">
+            <div class="hero-content">
+              <h1 class="hero__title">
+                КАК В <span class="accent">ДЕТСТВЕ!</span>
+              </h1>
+              <p class="hero__text">
+                Сахарная вата - это прекрасный вариант<br />сделать ваше
+                мероприятие <span class="accent">слаще</span>!
+              </p>
+              <div class="hero-buttons">
+                <a href="#" class="button button--primary hero__button">
+                  Сделать заказ
+                </a>
+                <a href="#" class="hero__link">
+                  <span class="button button--play hero__button--play">
+                    <img src="media/play.svg" alt="Play" />
+                  </span>
+                  Промо-ролик
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Белый блок -->
+      <div class="header-block"></div>
+
+      <!-- Слайдер -->
+      <div class="header-slider slider">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="slider-slide swiper-slide">
+              <img
+                src="media/gallery-slide-1.png"
+                alt="Парк Урицкого"
+                class="slider-image"
+              />
+            </div>
+          </div>
+          <div class="slider-scrollbar">
+            <span>02</span>
+            <div class="swiper-scrollbar"></div>
+            <span>06</span>
+          </div>
+        </div>
+      </div>
     </header>
     <section class="section gallery" id="gallery">
       <div class="container">

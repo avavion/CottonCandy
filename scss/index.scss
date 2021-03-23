@@ -1,0 +1,148 @@
+@import "mixins.scss";
+.header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  &-block {
+    position: absolute;
+    &--white {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100vw;
+      background-color: var(--color-grey);
+      transform: skew(15deg) translateX(-65%);
+      height: 100vh;
+      z-index: 2;
+    }
+  }
+  & .slider {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 90vw;
+  }
+}
+
+.accent {
+  color: var(--color-pink);
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  &-content {
+    position: relative;
+    height: 100%;
+    z-index: 3;
+  }
+  .container {
+    @include flex(column, stretch, center);
+    height: 100%;
+  }
+  &-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: var(--color-grey);
+    transform: skew(20deg) translateX(-55%);
+    height: 100vh;
+    z-index: 2;
+  }
+}
+
+.nav {
+  padding-top: 13px;
+  height: 64px;
+  @include flex(row, center, space-between);
+  &-logo {
+    &__link {
+      @include flex;
+    }
+    &__title {
+      margin-right: 12px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+  &-list {
+    a {
+      position: relative;
+      overflow: hidden;
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      &::before {
+        content: "";
+        height: 4px;
+        width: 50%;
+        bottom: -6px;
+        right: 0;
+        background-color: var(--color-pink);
+        position: absolute;
+        border-radius: 8px;
+        transition: width var(--animation-duration) ease-in-out;
+      }
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  margin: auto 0;
+  &__title {
+    font-size: 96px;
+    font-weight: bold;
+    span {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        height: 10px;
+        width: 100%;
+        background-color: var(--color-pink);
+        border-radius: 10px;
+      }
+    }
+  }
+  &__text {
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--color-black);
+  }
+  &-buttons {
+    @include flex;
+    margin-top: 80px;
+    a:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__link {
+    font-size: 24px;
+    font-weight: 500;
+    @include flex;
+    span {
+      margin-right: 12px;
+      position: relative;
+      img {
+        position: absolute;
+        left: 28px;
+      }
+    }
+  }
+}

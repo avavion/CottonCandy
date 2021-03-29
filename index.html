@@ -128,26 +128,53 @@
           <h2 class="section-header__title">Галерея</h2>
         </header>
       </div>
-      <ul id="gallery-slider" class="gallery-slider">
-        <li class="gallery-slide">
-          <div class="gallery-image-overlay">
-            <img src="media/gallery-slide-1.png" alt="Парк Урицкого" />
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="section catalog" id="catalog">
-      <div class="container">
-        <header class="section-header">
-          <h2 class="section-header__title">Услуги</h2>
-        </header>
-        <ul class="grid catalog-grid">
-          <!-- START -->
-          <li class="grid-item catalog-item" data-index="1"></li>
-          <li class="grid-item catalog-item" data-index="2"></li>
-          <li class="grid-item catalog-item" data-index="3"></li>
-          <li class="grid-item catalog-item" data-index="4"></li>
-          <!-- END -->
+      <div id="gallery-slider" class="swiper-container">
+        <ul class="gallery-slider swiper-wrapper">
+          <li class="gallery-slide swiper-slide">
+            <div class="gallery-image-overlay">
+              <img
+                src="media/gallery-slide-1.png"
+                data-swiper-parallax="25%"
+                data-swiper-parallax="100"
+                data-swiper-parallax-duration="0"
+                alt="Парк Урицкого"
+              />
+            </div>
+          </li>
+          <li class="gallery-slide swiper-slide">
+            <div class="gallery-image-overlay">
+              <img
+                src="media/gallery-slide-2.jpg"
+                data-swiper-parallax="25%"
+                data-swiper-parallax="100"
+                data-swiper-parallax-duration="0"
+                alt="Парк Урицкого"
+              />
+            </div>
+          </li>
+
+          <li class="gallery-slide swiper-slide">
+            <div class="gallery-image-overlay">
+              <img
+                src="media/gallery-slide-3.jpg"
+                data-swiper-parallax="25%"
+                data-swiper-parallax="100"
+                data-swiper-parallax-duration="0"
+                alt="Парк Урицкого"
+              />
+            </div>
+          </li>
+          <li class="gallery-slide swiper-slide">
+            <div class="gallery-image-overlay">
+              <img
+                src="media/gallery-slide-1.png"
+                data-swiper-parallax="25%"
+                data-swiper-parallax="100"
+                data-swiper-parallax-duration="0"
+                alt="Парк Урицкого"
+              />
+            </div>
+          </li>
         </ul>
       </div>
     </section>

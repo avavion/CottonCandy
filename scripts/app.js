@@ -42,6 +42,6 @@ window.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  gallerySlider.on("beforeInit", () => changeCounter(heroSlideCounter, gallerySlider));
-  gallerySlider.on("slideChange", () => changeCounter(heroSlideCounter, gallerySlider));
+  // gallerySlider.on("beforeInit", () => changeCounter(heroSlideCounter, gallerySlider));
+  // gallerySlider.on("slideChange", () => changeCounter(heroSlideCounter, gallerySlider));
 });

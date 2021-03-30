@@ -17,8 +17,9 @@ window.addEventListener("DOMContentLoaded", () => {
     loop: false,
     speed: 2500,
     init: true,
+    spaceBetween: 10,
     autoplay: {
-      delay: 1000,
+      delay: 5000,
     },
     pagination: {
       el: ".swiper-pagination",
@@ -27,7 +28,6 @@ window.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  heroSlider.on("beforeInit", () => changeCounter(heroSlideCounter, heroSlider));
   heroSlider.on("slideChange", () => changeCounter(heroSlideCounter, heroSlider));
 
   // Слайдер галлереи
@@ -38,10 +38,9 @@ window.addEventListener("DOMContentLoaded", () => {
     parallax: true,
     spaceBetween: 5,
     autoplay: {
-      delay: 5000,
+      delay: 10000,
     },
   });
 
-  gallerySlider.on("beforeInit", () => changeCounter(heroSlideCounter, gallerySlider));
-  gallerySlider.on("slideChange", () => changeCounter(heroSlideCounter, gallerySlider));
+  // gallerySlider.on("slideChange", () => changeCounter(heroSlideCounter, gallerySlider));
 });

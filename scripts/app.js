@@ -17,7 +17,6 @@ window.addEventListener("DOMContentLoaded", () => {
     loop: false,
     speed: 2500,
     init: true,
-    spaceBetween: 10,
     autoplay: {
       delay: 5000,
     },
@@ -41,6 +40,4 @@ window.addEventListener("DOMContentLoaded", () => {
       delay: 10000,
     },
   });
-
-  // gallerySlider.on("slideChange", () => changeCounter(heroSlideCounter, gallerySlider));
 });

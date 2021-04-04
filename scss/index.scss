@@ -146,3 +146,35 @@
     }
   }
 }
+
+.request {
+  &-content {
+    padding: 100px 0;
+    background-color: #000;
+  }
+  &-form {
+    margin: 0 auto;
+    max-width: 750px;
+    .form-input__label {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+    .form-input__input {
+      padding: 15px 24px;
+    }
+    .form-input:not(:last-child) {
+      margin-right: 30px;
+    }
+    .row:not(:last-child) {
+      margin-bottom: 25px;
+    }
+    .row:nth-child(3) {
+      margin-bottom: 40px;
+    }
+    .button {
+      width: 100%;
+    }
+  }
+}

@@ -39,5 +39,10 @@ window.addEventListener("DOMContentLoaded", () => {
     autoplay: {
       delay: 10000,
     },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+      clickable: true,
+    },
   });
 });

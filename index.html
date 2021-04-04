@@ -48,27 +48,42 @@
                 <!-- Список ссылок (в админке их будет больше) -->
                 <ul class="list nav-list">
                   <li class="list-item">
-                    <a href="/" class="list-item__link js-openMenu" id="openMenu">Меню</a>
+                    <a
+                      href="/"
+                      class="list-item__link js-openMenu"
+                      id="openMenu"
+                      >Меню</a
+                    >
                   </li>
                 </ul>
 
                 <!-- Логотип -->
                 <div class="nav-logo">
                   <a href="/" class="nav-logo__link">
-                    <h1 class="nav-logo__title">КАК В <span class="accent">ДЕТСТВЕ!</span></h1>
-                    <img src="media/logo.svg" alt="Логотип" class="nav-logo__image" />
+                    <h1 class="nav-logo__title">
+                      КАК В <span class="accent">ДЕТСТВЕ!</span>
+                    </h1>
+                    <img
+                      src="media/logo.svg"
+                      alt="Логотип"
+                      class="nav-logo__image"
+                    />
                   </a>
                 </div>
               </nav>
               <div class="hero">
                 <div class="hero-content">
-                  <h1 class="hero__title">КАК В <span class="accent">ДЕТСТВЕ!</span></h1>
+                  <h1 class="hero__title">
+                    КАК В <span class="accent">ДЕТСТВЕ!</span>
+                  </h1>
                   <p class="hero__text">
-                    Сахарная вата - это прекрасный вариант<br />сделать ваше мероприятие
-                    <span class="accent">слаще</span>!
+                    Сахарная вата - это прекрасный вариант<br />сделать ваше
+                    мероприятие <span class="accent">слаще</span>!
                   </p>
                   <div class="hero-buttons">
-                    <a href="#" class="button button--primary hero__button"> Сделать заказ </a>
+                    <a href="#" class="button button--primary hero__button">
+                      Сделать заказ
+                    </a>
                     <a href="#" class="hero__link">
                       <span class="button button--play hero__button--play">
                         <img src="media/play.svg" alt="Play" />
@@ -87,7 +102,11 @@
           </div>
           <div class="slider-wrapper swiper-wrapper">
             <div class="slider-slide swiper-slide">
-              <img src="media/gallery-slide-1.png" alt="Парк Урицкого" class="slider-image" />
+              <img
+                src="media/gallery-slide-1.png"
+                alt="Парк Урицкого"
+                class="slider-image"
+              />
             </div>
             <div class="slider-slide swiper-slide">
               <img
@@ -111,10 +130,18 @@
               />
             </div>
             <div class="slider-slide swiper-slide">
-              <img src="media/gallery-slide-1.png" alt="Парк Урицкого" class="slider-image" />
+              <img
+                src="media/gallery-slide-1.png"
+                alt="Парк Урицкого"
+                class="slider-image"
+              />
             </div>
             <div class="slider-slide swiper-slide">
-              <img src="media/gallery-slide-1.png" alt="Парк Урицкого" class="slider-image" />
+              <img
+                src="media/gallery-slide-1.png"
+                alt="Парк Урицкого"
+                class="slider-image"
+              />
             </div>
           </div>
         </div>
@@ -180,16 +207,107 @@
             </div>
           </li>
         </ul>
+        <div class="slider-scrollbar">
+          <span class="hero-slider--currentCounter">01</span>
+          <div class="swiper-pagination"></div>
+          <span>06</span>
+        </div>
       </div>
     </section>
 
-    <!-- Gallery -->
-    <section class="section" id="">
+    <!-- Оставить заявку -->
+    <section class="section request" id="request">
       <div class="container">
-        <header class="section-header">
+        <header class="request-header section-header">
           <h2 class="section-header__title">оставить заявку</h2>
         </header>
-        <div class="section-content"></div>
+      </div>
+      <div class="request-content section-content">
+        <div class="container">
+          <form class="form request-form" method="POST">
+            <div class="row">
+              <div class="form-input">
+                <label for="request_surname" class="form-input__label">
+                  Фамилия
+                </label>
+                <input
+                  type="text"
+                  id="request_surname"
+                  required
+                  name="surname"
+                  class="form-input__input"
+                  placeholder="Фамилия"
+                />
+              </div>
+              <div class="form-input">
+                <label for="request_name" class="form-input__label">
+                  Имя
+                </label>
+                <input
+                  type="text"
+                  id="request_name"
+                  required
+                  name="name"
+                  class="form-input__input"
+                  placeholder="Имя"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-input">
+                <label for="request_email" class="form-input__label">
+                  Эл. почта
+                </label>
+                <input
+                  type="email"
+                  id="request_email"
+                  required
+                  name="email"
+                  class="form-input__input"
+                  placeholder="example@gmail.com"
+                />
+              </div>
+              <div class="form-input">
+                <label for="request_phone" class="form-input__label">
+                  Номер телефона
+                </label>
+                <input
+                  type="phone"
+                  id="request_phone"
+                  required
+                  name="phone"
+                  class="form-input__input"
+                  placeholder="+79053171025"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-input">
+                <label for="request_service" class="form-input__label"
+                  >Услуга</label
+                >
+                <select
+                  name="services"
+                  id="request_service"
+                  class="form-input__input"
+                >
+                  <option value="">asdsada</option>
+                  <option value="">asdsada</option>
+                  <option value="">asdsada</option>
+                  <option value="">asdsada</option>
+                  <option value="">asdsada</option>
+                  <option value="">asdsada</option>
+                  <option value="">asdsada</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <button class="button button--primary button--border">
+                Оставить заявку
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -198,7 +316,11 @@
       <div class="container"></div>
     </footer>
 
-    <script src="scripts/libs/swiper-bundle.min.js" defer="defer" type="module"></script>
+    <script
+      src="scripts/libs/swiper-bundle.min.js"
+      defer="defer"
+      type="module"
+    ></script>
     <script src="scripts/app.js" type="module" defer="defer"></script>
   </body>
 </html>

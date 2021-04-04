@@ -111,7 +111,7 @@ ol {
 
 .col {
   @include flex(column);
-  @include margin(10, 10, 10, 10);
+  // @include margin(10, 10, 10, 10);
   @for $index from 1 to 13 {
     &-#{$index} {
       flex: $index;
@@ -127,12 +127,16 @@ ol {
   font-weight: 600;
   font-size: 24px;
   color: #fff;
+  cursor: pointer;
   transition: background-color var(--animation-duration) ease-in-out;
   &--primary {
     background-color: var(--color-pink);
     &:hover {
       background-color: darken($color-pink, 4);
     }
+  }
+  &--border {
+    border-radius: 8px;
   }
   &--play {
     border-radius: 100%;
@@ -200,6 +204,23 @@ ol {
     & .swiper-pagination-progressbar-fill {
       background-color: var(--color-pink);
       border-radius: 20px;
+    }
+  }
+}
+
+.form {
+  &-input {
+    @include flex(column, flex-start, flex-start);
+    width: 100%;
+    &__label {
+      font-weight: bold;
+    }
+    &__input {
+      border-radius: 8px;
+      color: var(--color-black);
+      font-size: 18px;
+      font-weight: 500;
+      width: 100%;
     }
   }
 }

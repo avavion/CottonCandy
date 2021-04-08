@@ -59,7 +59,7 @@
 
 .nav {
   padding-top: 13px;
-  @include flex(row, center, space-between);
+  @include flex(row, center, flex-end);
   &-logo {
     &__link {
       @include flex;
@@ -184,6 +184,7 @@
   &-nav {
     height: auto;
     padding: 45px 0px;
+    justify-content: space-between;
   }
 }
 
@@ -205,5 +206,92 @@
     height: 48px;
     width: 48px;
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    &-block {
+      display: none;
+    }
+  }
+  .hero {
+    color: #fff;
+    &__title {
+      font-size: 64px;
+    }
+    &__text {
+      color: #fff;
+      font-size: 24px;
+    }
+    &__link {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    &-buttons {
+      align-items: flex-start;
+      flex-direction: column-reverse;
+      margin-top: 40px;
+      a:not(:last-child){
+        margin: 0;
+      }
+    }
+  }
+}
+
+// Mobile
+@media screen and (max-width: 576px) {
+  :root {
+    --section-padding: calc(90px / 2);
+  }
+  .header {
+    .nav {
+      justify-content: flex-start;
+    }
+    .slider-scrollbar {
+      bottom: 30px;
+      right: 0;
+      left: var(--container-offset);
+      // transform: translateX(50%);
+    }
+  }
+
+  .hero {
+    &__text {
+      font-size: 18px;
+      margin-top: 30px;
+    }
+  }
+  .request {
+    &-form {
+      .form-input__label {
+        font-size: 18px;
+      }
+      .row {
+        flex-direction: column;
+      }
+      .form-input:not(:last-child) {
+        margin: 0;
+        margin-bottom: 25px;
+      }
+      .button {
+        padding: 20px 0px;
+      }
+    }
+  }
+  .section {
+    &-header {
+      &__title {
+        font-size: 32px;
+      }
+    }
+  }
+  .footer {
+    .nav-logo {
+      margin-bottom: 30px;
+    }
+    &-nav {
+      flex-direction: column;
+    }
   }
 }

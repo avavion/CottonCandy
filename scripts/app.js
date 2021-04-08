@@ -12,7 +12,9 @@ window.addEventListener("DOMContentLoaded", () => {
   };
 
   // Секция Hero
-  const heroSlideCounter = document.querySelector(".hero-slider--currentCounter"); // Счётчик
+  const heroSlideCounter = document.querySelector(
+    ".hero-slider--currentCounter"
+  ); // Счётчик
   const heroSlider = new Swiper("#header-slider", {
     loop: false,
     speed: 2500,
@@ -27,9 +29,15 @@ window.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  heroSlider.on("slideChange", () => changeCounter(heroSlideCounter, heroSlider));
+  heroSlider.on("slideChange", () =>
+    changeCounter(heroSlideCounter, heroSlider)
+  );
 
   // Слайдер галлереи
+  const gallerySlideCounter = document.querySelector(
+    ".gallery-slider--currentCounter"
+  );
+
   const gallerySlider = new Swiper("#gallery-slider", {
     loop: false,
     speed: 2500,
@@ -44,5 +52,9 @@ window.addEventListener("DOMContentLoaded", () => {
       type: "progressbar",
       clickable: true,
     },
+  });
+
+  heroSlider.on("slideChange", () => {
+    changeCounter(gallerySlideCounter, gallerySlider);
   });
 });

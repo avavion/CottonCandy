@@ -233,8 +233,10 @@ ol {
 .table {
   width: 100%;
   border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
   &-header {
-    background-color: #ff60a4;
+    background-color: rgb(255, 97, 165);
     &__title {
       font-size: 24px;
       font-weight: bold;
@@ -250,10 +252,16 @@ ol {
     font-weight: 700;
     color: #fff;
     flex: 1;
+    &--email {
+      flex: 2;
+    }
+    &--service {
+      flex: 2;
+    }
   }
   &-content {
     .table-row:nth-child(odd) {
-      background-color: #ffa6cc;
+      background-color: rgb(255, 166, 204);
     }
     .table-row:nth-child(even) {
       background-color: rgba(255, 166, 204, 0.5);

@@ -35,9 +35,9 @@
     <link rel="stylesheet" href="css/admin.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <title>Как в детстве!</title>
+    <title>Панель администратора - Главная</title>
     <!-- Open Graph -->
-    <meta name="og:title" content="Как в детстве!" />
+    <meta name="og:title" content="Панель администратора - Главная" />
     <meta name="og:email" content="avavionmvm@gmail.com" />
   </head>
   <body id="app">
@@ -55,19 +55,19 @@
           </div>
           <ul class="list nav-list">
             <li class="list-item">
-              <a href="/" class="list-item__link">Главная</a>
+              <a href="/admin.html" class="list-item__link">Главная</a>
             </li>
             <li class="list-item">
-              <a href="/" class="list-item__link">Заявки</a>
+              <a href="/table.html" class="list-item__link">Заявки</a>
             </li>
             <li class="list-item">
-              <a href="/" class="list-item__link">Статистика</a>
+              <a href="/stats.html" class="list-item__link">Статистика</a>
             </li>
             <li class="list-item">
-              <a href="/" class="list-item__link">Настройки</a>
+              <a href="/settings.html" class="list-item__link">Настройки</a>
             </li>
           </ul>
-          <a href="/" class="nav__link list-item__link">Выйти</a>
+          <a href="/exit.html" class="nav__link list-item__link">Выйти</a>
         </nav>
       </div>
     </header>
@@ -148,16 +148,15 @@
               </table>
             </div>
           </li>
-          <li class="grid-item">
+          <li class="grid-item" style="position: relative">
             <div class="grid-item-header">
               <h3 class="grid-item-header__title">Статистика</h3>
             </div>
-            <div class="grid-item-content">
-              <canvas
-                class="chart"
-                id="chart"
-                width="100%"
-              ></canvas>
+            <div
+              class="grid-item-content"
+              style="position: relative; width: 100%"
+            >
+              <canvas class="chart" id="chart" style="padding: 10px"></canvas>
             </div>
           </li>
         </ul>
@@ -203,11 +202,6 @@
       </div>
     </footer>
 
-    <script
-      src="scripts/libs/swiper-bundle.min.js"
-      defer="defer"
-      type="module"
-    ></script>
     <script src="scripts/app.js" type="module" defer="defer"></script>
     <script src="scripts/chart.js" type="module" defer="defer"></script>
   </body>

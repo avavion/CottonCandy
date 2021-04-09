@@ -108,7 +108,10 @@
 .request {
   &-content {
     padding: 100px 0;
-    background-color: #000;
+    background-image: url("../media/gallery-slide-1.png");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 1);
+    background-position: center center;
   }
   &-form {
     margin: 0 auto;

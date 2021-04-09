@@ -30,6 +30,7 @@ const data = {
     },
   ],
 };
+
 const config = {
   type: "line",
   data,
@@ -59,5 +60,7 @@ const config = {
   },
 };
 
-const ctx = document.querySelector("#chart").getContext("2d");
-const chart = new Chart(ctx, config);
+window.addEventListener("DOMContentLoaded", () => {
+  const ctx = document.querySelector("#chart").getContext("2d");
+  const chart = new Chart(ctx, config);
+});

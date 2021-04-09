@@ -341,6 +341,60 @@ ol {
   }
 }
 
+.modal {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &.active{
+    display: flex;
+  }
+  &-window {
+    background-color: #fbfbfb;
+    width: 720px;
+    padding: 60px 70px;
+    border-radius: 12px;
+  }
+  &__title {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--color-black);
+    margin-bottom: 30px;
+  }
+  &__input {
+    box-shadow: -3px 7px 34px -17px rgba(0, 0, 0, 0.25);
+    padding: 10px 20px;
+  }
+  &__label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #252525;
+  }
+  .form-input:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  &-form {
+    @include flex(column, stretch, flex-start);
+    .row:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &__button {
+    margin-top: 30px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .footer {
     .nav-logo {

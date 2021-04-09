@@ -85,7 +85,10 @@
                     мероприятие <span class="accent">слаще</span>!
                   </p>
                   <div class="hero-buttons">
-                    <a href="#" class="button button--primary hero__button js-showWindow">
+                    <a
+                      href="#"
+                      class="button button--primary hero__button js-showWindow"
+                    >
                       Сделать заказ
                     </a>
                     <a href="#" class="hero__link">
@@ -391,34 +394,49 @@
             <div class="row">
               <div class="form-input">
                 <label
-                  for="modal_surname"
+                  for="modal_email"
                   class="form-input__label modal__label"
-                  >Фамилия</label
+                  >Эл. почта</label
                 >
                 <input
-                  type="text"
+                  type="email"
                   class="form-input__input modal__input"
-                  id="modal_surname"
+                  id="modal_email"
                   required
-                  name="surname"
-                  placeholder="Фамилия"
+                  name="email"
+                  placeholder="example@gmail.com"
                 />
               </div>
               <div class="form-input">
-                <label for="modal_name" class="form-input__label modal__label">
-                  Имя</label
+                <label for="modal_phone" class="form-input__label modal__label">
+                  Номер телефона</label
                 >
                 <input
-                  type="text"
+                  type="phone"
                   class="form-input__input modal__input"
-                  id="modal_name"
+                  id="modal_phone"
                   required
-                  name="name"
-                  placeholder="Имя"
+                  name="phone"
+                  placeholder="+79053171025"
                 />
               </div>
             </div>
-            <div class="row"></div>
+            <div class="row">
+              <div class="form-input">
+                <label
+                  for="modal_service"
+                  class="form-input__label modal__label"
+                  >Услуга</label
+                >
+                <select
+                  name="services"
+                  id="modal_service"
+                  class="form-input__input modal__input"
+                >
+                  <option value="">asdsada</option>
+                </select>
+              </div>
+            </div>
             <button
               class="button button--primary button--border modal__button"
               id="modalSubmit"

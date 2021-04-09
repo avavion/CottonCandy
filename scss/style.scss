@@ -350,12 +350,12 @@ ol {
   bottom: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  &.active{
+  &.active {
     display: flex;
   }
   &-window {
@@ -402,6 +402,23 @@ ol {
     }
     &-nav {
       flex-direction: column;
+    }
+  }
+  .modal {
+    &-window{
+      width: 100%;
+      padding: 30px 15px;
+    }
+    .form {
+      &-input {
+        &:not(:last-child) {
+          margin-right: 0px;
+          margin-bottom: 20px;
+        }
+      }
+      .row{
+        flex-direction: column;
+      }
     }
   }
 }
